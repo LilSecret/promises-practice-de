@@ -15,7 +15,7 @@
  */
 
 // Your code goes here
-export const getPromise = new Promise((res, rej) => {
+export const getPromise = new Promise((res) => {
   setTimeout(() => {
     res('The PROMISE was RESOLVED');
   }, 1000);

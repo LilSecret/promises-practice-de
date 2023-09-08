@@ -20,7 +20,7 @@ export const handlePromise = () => {
     rej('REJECTED');
   })
   .catch((err) => console.log(err))
-  .finally(() => console.log('This promise is finished!'))
+  .finally(() => console.log('This promise is finished!'));
 };
 
 // === TEST YOURSELF ===
