@@ -22,7 +22,7 @@
 export function parsePromised(json_string) {
   // Your code goes here...
   try {
-    return new Promise((res, rej) => {
+    return new Promise((res) => {
       res(JSON.parse(json_string));
     })
   }
@@ -63,8 +63,7 @@ export const handlePromise = (promise) => {
       if (reason.message) {
         onReject(reason);
       } else {
-        // console.log(reason);
-        return reason;
+        console.log(reason);
       }
     })
 };
