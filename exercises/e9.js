@@ -29,7 +29,7 @@ export function iterate(arg) {
 
 export function alwaysThrows() {
   // Your code goes here...
-  return new Error("OH NOES");
+  throw new Error("OH NOES");
 }
 
 /**

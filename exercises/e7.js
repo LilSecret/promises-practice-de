@@ -22,12 +22,13 @@
 export function parsePromised(json_string) {
   // Your code goes here...
   try {
-    return new Promise((res) => {
-      res(JSON.parse(json_string));
+    return new Promise((resolve, reject) => {
+      const string = JSON.parse(json_string);
+      resolve(string);
+      reject();
     })
-  }
-  catch(err) {
-    console.log(err);
+  } catch(err) {
+    console.error(err);
   }
 }
 
