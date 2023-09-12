@@ -57,9 +57,11 @@ const getData = fetch(usersUrl);
 export const result = getData
   .then(data => data.json())
   .then(data => getLoginList(data))
-  .then(array => console.log(array))
+  .then(data => {
+    console.log(data);
+    return data;
+  })
   .catch(err => err);
-  // .then(array => array)
 
 
 // === TEST YOURSELF ===
