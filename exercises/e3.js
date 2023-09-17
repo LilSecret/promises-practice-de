@@ -17,7 +17,7 @@
 export const getPromise = (value) => {
   // Your code goes here...
   if (value % 1 === 0) {
-    return new Promise((res, rej) => {
+    return new Promise((res) => {
       res(value);
     })
   } else {
@@ -39,7 +39,8 @@ export const getPromise = (value) => {
 export const updateSumValue = () => {
   // Your code goes here...
   let sum = 2;
-  getPromise(120);
+  getPromise(120)
+  .then((val) => val += sum);
   sum += 8;
   return sum;
 };

@@ -72,7 +72,9 @@ export const handlePromise3 = Promise.allSettled(promiseArr)
  * The value of newPromiseArr MUST have more than one promise in the array!
  */
 
-// export const newPromiseArr = promiseArr.filter((promise) => promise.status === 'full-filled');
+export const newPromiseArr = promiseArr.filter(
+  (promise) => promise !== "promise2" && promise !== "promise3"
+);
 
 // Do NOT refactor or update handlePromise4 function, it's all set to work
 export const handlePromise4 = (arr) => {
